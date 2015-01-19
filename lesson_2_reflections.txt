@@ -7,19 +7,19 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
-    ?
+    Only add those files that have changes related to one logical modification. Once those files are added then you can commit everything related to the logical change.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
-    ?
+    Branches would be helpful to keep track of different distinct versions of your project. For instance you can track ever released version as a sperate branch so you can fix bigs as they appear in the various branches. You can also keep the historical version distinct from new versions that are actively being improved. Without branches you would need separate repositories for each historical release. This would also make fixing a bug in the initial instance and merging it into all subsequent versions. If the various versions are within the same repository this job is easier.
 
 How do the diagrams help you visualize the branch structure?
-    ?
+    They make it easier to see parent-child relationships, reachbility, and see what changes would be included in merges.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-    ?
+    Merging combines all the additive changes between two branches so that the resultant branch contains all new content in the two branches. It will also delete lines where those lines existed in the common ancestor. Merges are represented in the diagram to show that the resultant branch has two parents.
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
-    ?
+    Automatic merges simplier the merger process in a good number of cases where the changes are obvious. Doing all merges manually would be tedious and is often not wholly necessary.
